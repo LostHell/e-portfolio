@@ -1,0 +1,36 @@
+{
+  "header": {
+    "owner_name": "Enes Karadzhov",
+    "owner_short_description": "Passionate Junior Developer, always ready for exciting new challenges!",
+    "nav": {
+      "about": "About",
+      "skills": "Skills",
+      "projects": "Projects",
+      "contact": "Contact"
+    }
+  },
+  "about": {
+    "headline": "About",
+    "headline_image_alt": "Winking eyes.",
+    "more_info": "Hi! My name is Enes Karadzhov. I am a Junior Developer based in the lovely Berlin. I can confidently say that I know how to create the most high-converting design that can boost your sales. I approach each project with special attention and always put a lot of effort to achieve the best result. My goals are to meet deadlines at any cost with no compromise when it comes to the quality of work!",
+    "more_info_additional": "Outside of my professional career, I workout and listen to music and often enjoy it quite loud.",
+    "get_in_touch": {
+      "headline": "Get in touch",
+      "open_for_work": "I’m always open to new opportunities and freelance work, so email me if you'd like to work together."
+    },
+    "contact_data": {
+      "email": {
+        "subject": "Hi%20there!"
+      }
+    }
+  },
+  "skills": {
+
+  },
+  "projects": {
+
+  },
+  "contact": {
+
+  }
+}

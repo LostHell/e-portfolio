@@ -1,0 +1,17 @@
+#projects {
+  .project {
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+
+    .project-image {
+      position: absolute;
+      top: -1rem;
+      left: 0;
+      z-index: -1;
+      transform: scale(0.7);
+    }
+  }
+}

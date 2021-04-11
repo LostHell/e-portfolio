@@ -1,0 +1,9 @@
+.icon {
+  @include icon;
+  border-bottom: none;
+  position: relative;
+
+  > .label {
+    display: none;
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "header": {
+    "owner_name": "Енес Караджов",
+    "owner_short_description": "Страстен младши разработчик на софтуер, винаги готов за нови предизвикателства!",
+    "nav": {
+      "about": "За мен",
+      "skills": "Умения",
+      "projects": "Проекти",
+      "contact": "Контакти"
+    }
+  },
+  "about": {
+    "headline": "За мен",
+    "headline_image_alt": "TODO ALT TEXT FOR IMAGE",
+    "more_info": "Здравейте! Казвам се Енес Караджов. TODO.",
+    "more_info_additional": "Допълнителни занимания извън работата ми TODO",
+    "get_in_touch": {
+      "headline": "За връзка с мен:",
+      "open_for_work": "Не се притеснявайте да се свържете с мен по всякакви въпроси."
+    },
+    "contact_data": {
+      "email": {
+        "subject": "Здравей, Енес!"
+      }
+    }
+  },
+  "skills": {},
+  "projects": {},
+  "contact": {}
+}

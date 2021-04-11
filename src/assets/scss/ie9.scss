@@ -1,0 +1,36 @@
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'libs/skel';
+
+#bg {
+  &:before {
+    background: _palette(bg-overlay);
+  }
+}
+
+#header {
+  .logo {
+    margin: 0 auto;
+  }
+
+  .content {
+    display: inline-block;
+  }
+
+  nav {
+    ul {
+      display: inline-block;
+
+      li {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+#main {
+  article {
+    margin: 0 auto;
+  }
+}

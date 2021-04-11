@@ -1,0 +1,12 @@
+#skills {
+  .skills-list {
+    @include vendor('display', 'flex');
+    @include vendor('flex-wrap', 'wrap');
+    margin: 0 -0.5rem;
+
+    .item {
+      @include vendor('flex-basis', '25%');
+      padding: 0 0.5rem 0.5rem;
+    }
+  }
+}
