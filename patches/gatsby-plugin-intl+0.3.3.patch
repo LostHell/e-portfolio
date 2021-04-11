@@ -1,0 +1,35 @@
+diff --git a/node_modules/gatsby-plugin-intl/gatsby-node.js b/node_modules/gatsby-plugin-intl/gatsby-node.js
+index 202d9ad..c06b6d4 100644
+--- a/node_modules/gatsby-plugin-intl/gatsby-node.js
++++ b/node_modules/gatsby-plugin-intl/gatsby-node.js
+@@ -47,7 +47,7 @@ exports.onCreateWebpackConfig = function (_ref, pluginOptions) {
+   actions.setWebpackConfig({
+     plugins: [plugins.define({
+       GATSBY_INTL_REDIRECT_COMPONENT_PATH: JSON.stringify(redirectComponent)
+-    }), new webpack.ContextReplacementPlugin(/@formatjs[/\\]intl-relativetimeformat[/\\]dist[/\\]locale-data$/, regex), new webpack.ContextReplacementPlugin(/@formatjs[/\\]intl-pluralrules[/\\]dist[/\\]locale-data$/, regex)]
++    })]
+   });
+ };
+ 
+diff --git a/node_modules/gatsby-plugin-intl/wrap-page.js b/node_modules/gatsby-plugin-intl/wrap-page.js
+index 7c9a8bf..a521135 100644
+--- a/node_modules/gatsby-plugin-intl/wrap-page.js
++++ b/node_modules/gatsby-plugin-intl/wrap-page.js
+@@ -23,17 +23,7 @@ var polyfillIntl = function polyfillIntl(language) {
+   var locale = language.split("-")[0];
+ 
+   try {
+-    if (!Intl.PluralRules) {
+-      require("@formatjs/intl-pluralrules/polyfill");
+ 
+-      require("@formatjs/intl-pluralrules/dist/locale-data/" + locale);
+-    }
+-
+-    if (!Intl.RelativeTimeFormat) {
+-      require("@formatjs/intl-relativetimeformat/polyfill");
+-
+-      require("@formatjs/intl-relativetimeformat/dist/locale-data/" + locale);
+-    }
+   } catch (e) {
+     throw new Error("Cannot find react-intl/locale-data/" + language);
+   }

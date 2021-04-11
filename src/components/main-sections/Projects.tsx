@@ -1,6 +1,5 @@
 import * as React from 'react';
-import laptop from '../../images/laptop-mockup.png';
-import google from '../../images/projects/google.png';
+import { StaticImage } from 'gatsby-plugin-image';
 
 export const ProjectsSection = (props) => {
   return (
@@ -15,8 +14,24 @@ export const ProjectsSection = (props) => {
       <h2 className="major">Projects</h2>
       <h3>Content coming soon...!!</h3>
       <div className="project">
-        <img src={laptop} className="laptop-image" alt="Laptop.." />
-        <img src={google} className="project-image" alt="Google project" />
+        <StaticImage
+          className="laptop-image"
+          src="../../images/laptop-mockup.png"
+          loading="lazy"
+          width={1000}
+          quality={95}
+          formats={['auto', 'webp', 'avif']}
+          alt="TODO laptop image"
+        />
+        <StaticImage
+          className="project-image"
+          src="../../images/projects/google.png"
+          loading="lazy"
+          width={1000}
+          quality={95}
+          formats={['auto', 'webp', 'avif']}
+          alt="TODO project image"
+        />
       </div>
       {props.close}
     </article>
